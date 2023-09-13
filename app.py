@@ -1,7 +1,7 @@
 import openpyxl
 from flask import Flask, render_template, request, redirect, url_for
 
-file_path = 'C:\\Users\\Chauh\\Documents\\ThaneFilteredEngg.xlsx'
+file_path = 'ThaneFilteredEngg.xlsx'
 workbook = openpyxl.load_workbook(file_path)
 sheet = workbook.active
 
