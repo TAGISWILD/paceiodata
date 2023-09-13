@@ -63,6 +63,22 @@
                 {% for result in info %}
                     <li>Name: {{ result['name'] }}</li>
                     <li>Roll Number: {{ result['roll'] }}</li>
+                    <br>
+            <br>
+                    <li>MT5 - Data</li>
+                    <br>
+                    <li>MAINS</li>
+                    <br>
+                    <li>Marks: {{ result['marks_mt5m'] }}</li>
+                    <li>Institute Rank: {{ result['rank_mt5m'] }}</li>
+                    <br>
+                    <li>ADVANCED</li>
+                    <br>
+                    <li>Marks (P1): {{ result['marks_mt5a_paper1'] }}</li>
+                    <li>Marks (P2): {{ result['marks_mt5a_paper2'] }}</li>
+                    <li>Total Marks: {{ result['total_marks_mt5a'] }}</li>
+                    <li>Institute Rank: {{ result['rank_mt5a'] }}</li>
+
                 {% endfor %}
             {% else %}
                 <li>No matching records found</li>
